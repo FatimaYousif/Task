@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Views Chapters</title>
+    <script src="https://kit.fontawesome.com/86a62bd63e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="chapters.css">
+</head>
+
+<body>
+
+    <!-- navbar  -->
+    <header>
+        <div class="img">
+            <img src="assets/logo/wcs.svg" alt="" width="100">
+        </div>
+
+        <div class="middle">
+            <ul style="color:gray">
+                <li ><a href="#one">Culture</a></li>
+                <li ><a href="#two">Sport</a></li>
+                <li ><a href="#three">Take action</a></li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                <li><a href="explore.html"><img src="assets/icons/hamburger_short.svg" id="hamburger" alt=""
+                            width="15"></a></li>
+            </ul>
+        </div>
+
+    </header>
+
+    <!-- carousel/slider of M items -->
+
+    <main>
+        <span>&#139;</span>
+        <span>&#155;</span>
+        <section>
+            <div id="one"><img src="assets/other-images/01_culture.jpg" alt="">
+                <div class="text1">
+                    <h1>01</h1>
+                    <hr>
+                    <p>Culture</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/02_sport.jpg" alt="">
+                <div class="text1">
+                    <h1>1.1</h1>
+                    <hr>
+                    <p>Escaping places</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/03_action.jpg" alt="">
+                <div class="text1">
+                    <h1>1.2</h1>
+                    <hr>
+                    <p>A living musuem</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/11_escaping_places_intro.jpg" alt="">
+                <div class="text1">
+                    <h1>1.3</h1>
+                    <hr>
+                    <p>A wolfman panel</p>
+                </div>
+            </div>
+            <div id="two"><img src="assets/other-images/122_wolfman_panel.jpg" alt="">
+                <div class="text1">
+                    <h1>02</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/123_river_house_ruin.jpg" alt="">
+                <div class="text1">
+                    <h1>2.1</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/12_living_museum_intro.jpg" alt="">
+                <div class="text1">
+                    <h1>2.2</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/13_history_horse_back_intro.jpg" alt="">
+                <div class="text1">
+                    <h1>2.3</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+            <div id="three"><img src="assets/other-images/21_north_6_shooter_climb.jpg" alt="">
+                <div class="text1">
+                    <h1>03</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/22_bikepacking_lockheart_basin.jpg" alt="">
+                <div class="text1">
+                    <h1>3.1</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/23_indian_creek.jpg" alt="">
+                <div class="text1">
+                    <h1>3.2</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+            <div><img src="assets/other-images/24_trail_running_with_gods.jpg" alt="">
+                <div class="text1">
+                    <h1>3.3</h1>
+                    <hr>
+                    <p>Take Action</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script>
+        var span = document.getElementsByTagName('span');
+        var div = document.getElementsByTagName('div');
+        var l = 0;
+        span[1].onclick = () => {
+            l++;
+            for (var i of div) {
+                if (l == 0) { i.style.left = "0px"; }
+                // if(l==1) {i.style.left="-740px";}
+                if (l == 1) { i.style.left = "-700px"; }
+                // if (l == 1) { i.style.left = "-1000px"; }
+                
+
+                // if(l==2) {i.style.left="-1480px";}
+                if (l == 2) { i.style.left = "-1400px"; }
+
+                // if(l==3) {i.style.left="-2220px";}
+                if (l == 3) { i.style.left = "-2000px"; }
+
+                // if(l==4) {i.style.left="-2960px";}
+                if (l == 4) { i.style.left = "-2700px"; }
+
+                if (l > 4) { l = 4; }
+            }
+        }
+        span[0].onclick = () => {
+            l--;
+            for (var i of div) {
+                if (l == 0) { i.style.left = "0px"; }
+                if (l == 1) { i.style.left = "-700px"; }
+                if (l == 2) { i.style.left = "-1400px"; }
+                if (l == 3) { i.style.left = "-2000px"; }
+                if (l == 4) { i.style.left = "-2700px"; }
+                if (l < 0) { l = 0; }
+            }
+        }
+
+    </script>
+</body>
+
+</html>

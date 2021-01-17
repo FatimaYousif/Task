@@ -1,0 +1,299 @@
+*
+{
+ margin: 0 auto;
+}
+body{
+    color: white;
+    background: linear-gradient(#99cffe, #6b5959);
+    font-family: 'Avenir', sans-serif;
+}
+
+/* navbar */
+
+header {
+    padding: 1.5% 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.img img, #hamburger{
+    background-color: linear-gradient(to bottom,#99cffe, #6b5959);;
+    /* color: black; */
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.links ul li{ 
+    padding-right: 15px;
+    
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.heading
+{
+    margin-left: 35%;
+}
+.links{
+        margin-left: 15%;
+}
+ul li {
+    list-style-type: none;
+}
+
+
+/* map */
+#map
+{
+    /* background-color: #5c5353; */
+    background-color:#9a9090;
+    border-radius: 3em;
+    padding: 0.3rem 0.6rem ;
+}
+
+
+/* footer */
+.text, .next
+{
+    display: inline;
+}
+.next{
+    margin-left: 45%;
+}
+.next a{
+    color: white;
+    text-decoration: none;
+}
+footer
+{
+    margin-left: 2%;
+    padding:  0 0 2%  0;
+    margin-top: 1%;
+
+    position: relative;
+    bottom:108px;
+}
+
+#map
+{
+    font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (max-width: 530px)
+{
+    .img,.heading
+    {
+        margin-bottom: 2%;
+    }
+    .heading
+    {
+        margin-left: 1rem;
+    }
+    .links
+    {
+        margin-left: 1.5rem;
+    }
+    
+}
+
+
+
+/* new deck */
+/* .deck img
+{
+    width: 400px;
+    height: 500px;
+}
+
+.deck{
+    margin-top: 1%;
+    display: flex ;
+    flex-wrap: wrap ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.deck hr{
+width: 375px;
+margin-bottom: 1.5%;
+}
+.deck h1
+{
+font-size:5rem;
+}
+.text1, .text2,.text3{
+position: relative;
+top: -150px;
+}
+.text1
+{
+left: 3%;
+}
+
+.text2
+{
+left: 5%;
+}
+
+.text3
+{
+left: 6%;
+}
+
+.hidden .texth
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+.one:hover .text1{
+    display: none;
+}
+
+.one:hover .hidden{
+    position: relative;
+    left:5%;
+    top: -50%;
+    color:white;
+}
+
+.one:hover ~ .three 
+{
+    filter: blur(4px);
+}
+.one:hover ~ .three .hidden,.one:hover + .two .hidden{
+    display: none;
+}
+
+
+
+.one:hover .hidden{
+    display: block;
+}
+
+.two:hover .hidden{
+    position: relative;
+    left:1%;
+    top: -50%;
+    color:white;
+}
+.two:hover .text1
+{
+    display: none;
+}
+.two:hover ~ .three
+{
+    filter: blur(4px);
+}
+
+.two:hover ~ .three .hidden{
+    display: none;
+}
+
+
+.three:hover .hidden{
+    position: relative;
+    left:1%;
+    top: -50%;
+    color:white;
+}
+.three:hover .text1
+{
+    display: none;
+} */
+
+
+/* changed deck */
+.deck img {
+    width: 400px;
+    height: 500px;
+}
+
+.deck {
+    margin-top: 1%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin-bottom: 0; */
+    margin-left: 2%;
+    margin-right: 2%;
+
+}
+
+.deck hr {
+    width: 375px;
+    margin-bottom: 1.5%;
+}
+
+.deck h1 {
+    font-size: 5rem;
+}
+
+.text1,
+.text2,
+.text3 {
+    position: relative;
+    top: -150px;
+}
+
+.text1 {
+    left: 3%;
+}
+
+.text2 {
+    left: 5%;
+}
+
+.text3 {
+    left: 6%;
+}
+
+.texth {
+    color: white;
+    display: none;
+    left: 3%;
+}
+
+/* one */
+.one:hover .texth,
+.two:hover .texth,
+.three:hover .texth {
+    display: block;
+    position: relative;
+    top: -60%;
+}
+
+.one:hover .text1,
+.two:hover .text1,
+.three:hover .text1 {
+    display: none;
+}
+
+.one:hover~.two,
+.one:hover~.three {
+    filter: blur(4px);
+}
+
+
+/* two */
+.two:hover~.three {
+    filter: blur(4px);
+}
+#explore
+{
+    background-color: white;
+    color: black;
+    border:1px solid white;
+    padding: 0.5em 1em;
+    margin-top:3%;
+}

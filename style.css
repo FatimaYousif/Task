@@ -1,0 +1,65 @@
+*{
+    margin: 0 auto;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(#99cffe, #6b5959); 
+    color:white;
+    font-family: 'Avenir', sans-serif;
+  }
+
+.content
+{
+
+    height: 60% ;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top:15%;
+
+}
+.text
+{
+    font-size: 1.3em;
+    word-spacing: 5px;
+}
+#company
+{
+    font-size: 0.6em;    
+}
+.icon
+{
+    color:black;
+    margin-bottom:4%;
+}
+
+#skip
+{
+    text-decoration: none;
+    color: white;
+
+}
+/* footer{
+    text-align: center;
+    display: flex ;
+    flex-wrap: wrap ;
+    flex-direction:row;
+}
+.textf
+{
+    margin-right: -15%;
+    font-size: 0.2em;
+} */
+
+
+#text{
+    font-size: 0.2em;
+    margin-left: 40%;
+}
+#skip
+{
+    font-size: large;
+    margin-left: 90%;
+    margin-top: 5%;
+}
